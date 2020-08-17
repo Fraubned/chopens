@@ -2,7 +2,7 @@ import 'package:bloc/bloc.dart';
 import '../pages/myaccountspage.dart';
 import '../pages/mymessages.dart';
 import '../pages/saved.dart';
-import '../pages/explore.dart';
+import '../pages/explore/explore.dart';
 import '../pages/home/home.dart';
 
 enum NavigationEvents {
