@@ -17,7 +17,7 @@ class ExplorePage extends StatelessWidget with NavigationStates {
         children: <Widget>[
           Padding(padding: EdgeInsets.only(top: 5)),
           Text(
-            'Bu Haftanın En İyileri',
+            'Bests of This Week',
             style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.w900,
@@ -31,9 +31,67 @@ class ExplorePage extends StatelessWidget with NavigationStates {
               itemBuilder: (BuildContext context, int index) => Card(
                 semanticContainer: true,
                 clipBehavior: Clip.antiAliasWithSaveLayer,
-                child: Image.asset(
-                  'assets/back2.jpg',
-                  fit: BoxFit.fill,
+                child: Container(
+                  width: 300,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage('assets/back4.jpg'),
+                        fit: BoxFit.cover),
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 0, vertical: 0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+                          Container(
+                            height: 50.0,
+                            width: 50.0,
+                            decoration: new BoxDecoration(
+                              shape: BoxShape.circle,
+                              image: new DecorationImage(
+                                fit: BoxFit.fill,
+                                image: AssetImage('assets/biz.png'),
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            width: 5.0,
+                          ),
+                          Text(
+                            "feyyazkavun",
+                            style: TextStyle(
+                                fontWeight: FontWeight.w900,
+                                color: Colors.white),
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        'Led Zeppelin - Stairway to Heaven Cover',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 12),
+                      ),
+                      SizedBox(
+                        height: 4,
+                      ),
+                      Text(
+                        '#Rock #OldRock',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w900,
+                            fontSize: 12),
+                      ),
+                      SizedBox(
+                        height: 5,
+                      ),
+                    ],
+                  ),
                 ),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(5),
@@ -47,7 +105,7 @@ class ExplorePage extends StatelessWidget with NavigationStates {
             height: 30,
             child: Center(
               child: Text(
-                'Kategoriler',
+                'Explore',
                 style: TextStyle(
                     fontSize: 18,
                     color: Colors.black54,
@@ -56,31 +114,131 @@ class ExplorePage extends StatelessWidget with NavigationStates {
             ),
           ),
           Expanded(
-            child: ListView.builder(
-              itemCount: 5,
-              shrinkWrap: true,
-              itemBuilder: (context, index) {
-                return Card(
-                  color: Colors.red[300],
-                  semanticContainer: true,
-                  clipBehavior: Clip.antiAliasWithSaveLayer,
-                  child: ListTile(
-                    contentPadding: EdgeInsets.only(left: 155),
-                    title: Text(
-                      'Kategoriler',
-                      style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.white70),
-                    ),
+            child: Container(
+              decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [Colors.white70, Colors.red[100]])),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Column(
+                        children: <Widget>[
+                          Container(
+                            height: 90,
+                            width: 90,
+                            decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(
+                                  width: 1,
+                                  color: Colors.black54,
+                                ),
+                                image: DecorationImage(
+                                    image: AssetImage('assets/back5.jpg'),
+                                    fit: BoxFit.cover)),
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            'Popular Musicians',
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14,
+                                color: Colors.black45),
+                          ),
+                          SizedBox(
+                            height: 25,
+                          ),
+                          Container(
+                            height: 80,
+                            width: 110,
+                            decoration: BoxDecoration(
+                                shape: BoxShape.rectangle,
+                                border: Border.all(
+                                  width: 1,
+                                  color: Colors.black54,
+                                ),
+                                image: DecorationImage(
+                                    image: AssetImage('assets/back6.jpg'),
+                                    fit: BoxFit.cover)),
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            'Popular Musics',
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14,
+                                color: Colors.black45),
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        width: 50,
+                      ),
+                      Column(
+                        children: <Widget>[
+                          Container(
+                            height: 90,
+                            width: 90,
+                            decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                border: Border.all(
+                                  width: 1,
+                                  color: Colors.black54,
+                                ),
+                                image: DecorationImage(
+                                    image: AssetImage('assets/back7.jpg'),
+                                    fit: BoxFit.cover)),
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            'Musicians You Like',
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14,
+                                color: Colors.black45),
+                          ),
+                          SizedBox(
+                            height: 25,
+                          ),
+                          Container(
+                            height: 80,
+                            width: 110,
+                            decoration: BoxDecoration(
+                                shape: BoxShape.rectangle,
+                                border: Border.all(
+                                  width: 1,
+                                  color: Colors.black54,
+                                ),
+                                image: DecorationImage(
+                                    image: AssetImage('assets/back8.jpg'),
+                                    fit: BoxFit.cover)),
+                          ),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Text(
+                            'Musics You Like',
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14,
+                                color: Colors.black45),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  elevation: 7,
-                  margin: EdgeInsets.all(5),
-                );
-              },
+                ],
+              ),
             ),
           )
         ],

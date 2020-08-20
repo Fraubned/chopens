@@ -71,7 +71,7 @@ class _SideBarState extends State<SideBar>
               Expanded(
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
-                  color: Colors.red[500],
+                  color: Color.fromRGBO(0, 0, 0, 0.6),
                   child: Column(
                     children: <Widget>[
                       SizedBox(
@@ -81,16 +81,14 @@ class _SideBarState extends State<SideBar>
                         title: Text(
                           "Feyyaz Kavun",
                           style: TextStyle(
-                              fontStyle: FontStyle.italic,
                               color: Colors.white,
                               fontSize: 30,
                               fontWeight: FontWeight.w500),
                         ),
                         subtitle: Text(
-                          "Usta Müzisyen",
+                          "Amateur Musician",
                           style: TextStyle(
-                            fontStyle: FontStyle.italic,
-                            color: Colors.white70,
+                            color: Colors.white,
                             fontSize: 18,
                           ),
                         ),
@@ -146,17 +144,8 @@ class _SideBarState extends State<SideBar>
                               .add(NavigationEvents.MyMessagesClickedEvent);
                         },
                       ),
-                      MenuItem(
-                        icon: Icons.save_alt,
-                        title: "Saves",
-                        onTap: () {
-                          onIconPressed();
-                          BlocProvider.of<NavigationBloc>(context)
-                              .add(NavigationEvents.MyStoregeClickedEvent);
-                        },
-                      ),
                       Divider(
-                        height: 10,
+                        height: 40,
                         thickness: 0.8,
                         color: Colors.white.withOpacity(0.8),
                         indent: 32,
@@ -186,7 +175,7 @@ class _SideBarState extends State<SideBar>
                     child: Container(
                       width: 35,
                       height: 110,
-                      color: Colors.red[500],
+                      color: Color.fromRGBO(0, 0, 0, 0.6),
                       alignment: Alignment.centerLeft,
                       child: AnimatedIcon(
                         progress: _animationController.view,

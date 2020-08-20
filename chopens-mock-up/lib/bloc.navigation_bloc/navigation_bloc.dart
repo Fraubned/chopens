@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import '../pages/myaccountspage.dart';
+import '../pages/profile/myaccountspage.dart';
 import '../pages/mymessages.dart';
 import '../pages/saved.dart';
 import '../pages/explore/explore.dart';
@@ -17,7 +17,7 @@ abstract class NavigationStates {}
 
 class NavigationBloc extends Bloc<NavigationEvents, NavigationStates> {
   @override
-  NavigationStates get initialState => MyAccountsPage();
+  NavigationStates get initialState => HomePage();
 
   @override
   Stream<NavigationStates> mapEventToState(NavigationEvents event) async* {

@@ -79,103 +79,6 @@ class HomePage extends StatelessWidget with NavigationStates {
                             ),
                           ),
                         ),
-                        /*Container(
-                          width: 65,
-                          child: Padding(
-                            padding: EdgeInsets.symmetric(horizontal: 5),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: <Widget>[
-                                Stack(
-                                  overflow: Overflow.visible,
-                                  children: <Widget>[
-                                    Container(
-                                      decoration: BoxDecoration(
-                                        shape: BoxShape.circle,
-                                        border: Border.all(
-                                            color: Colors.white, width: 2),
-                                      ),
-                                      child: ClipOval(
-                                        child: Image.asset(
-                                          'assets/biz.png',
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                    ),
-                                    Positioned(
-                                      right: 5,
-                                      left: 5,
-                                      bottom: -12,
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          color: Colors.redAccent,
-                                          shape: BoxShape.circle,
-                                        ),
-                                        child: Icon(
-                                          Icons.add,
-                                          size: 23,
-                                          color: Colors.white,
-                                        ),
-                                      ),
-                                    )
-                                  ],
-                                ),
-                                Column(
-                                  children: <Widget>[
-                                    Icon(
-                                      Icons.favorite,
-                                      color: Colors.white,
-                                      size: 45,
-                                    ),
-                                    Text(
-                                      "458.8K",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.white),
-                                    )
-                                  ],
-                                ),
-                                Column(
-                                  children: <Widget>[
-                                    Icon(
-                                      Icons.mode_comment,
-                                      color: Colors.white,
-                                      size: 45,
-                                    ),
-                                    Text(
-                                      "1918",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.white),
-                                    )
-                                  ],
-                                ),
-                                Column(
-                                  children: <Widget>[
-                                    Icon(
-                                      Icons.share,
-                                      color: Colors.white,
-                                      size: 45,
-                                    ),
-                                    Text(
-                                      "Share",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.white),
-                                    )
-                                  ],
-                                ),
-                                ClipOval(
-                                  child: Image.network(
-                                    'https://i0.wp.com/liveforlivemusic.com/wp-content/uploads/2016/02/musicbrain.jpg',
-                                    fit: BoxFit.cover,
-                                    height: 54,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        )*/
                       ],
                     ),
                   ),
@@ -201,9 +104,9 @@ class HomePage extends StatelessWidget with NavigationStates {
                           halfFilledIconData: Icons.blur_on,
                         ),
                         IconButton(
-                            color: Colors.white70,
+                            color: Colors.redAccent,
                             iconSize: 25,
-                            icon: Icon(Icons.music_note),
+                            icon: Icon(Icons.add_circle),
                             onPressed: () {}),
                         IconButton(
                             color: Colors.white70,
